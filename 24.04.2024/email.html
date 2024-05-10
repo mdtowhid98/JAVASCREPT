@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let Email=prompt("enter ur email address");
+        const regEx=/^[^\s@]+@[^\s@]+\.[^\s@]+$/
+        if(regEx.test(Email)){
+            alert("email is correct");
+        }
+        else{
+            alert("email is wrong"); 
+        }
+    </script>
+</body>
+</html>

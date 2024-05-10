@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let userInput=parseInt(prompt("enter ur number"));
+
+        let myArray=[];
+        let sum=0;
+
+        for(let i=0; i<userInput; i++){
+            let number=prompt("enter ur "+(i+1)+" number");
+            myArray.push(number);
+ 
+        }
+        for(let i=0; i<myArray.length; i++){
+            sum+=parseInt(myArray[i]);
+        }
+
+        let avarage=sum/myArray.length;
+        document.write(sum+"<br>");
+        document.write(avarage);
+    </script>
+</body>
+</html>

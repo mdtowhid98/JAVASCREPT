@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="">unit price</label>
+    <input type="text" id="unitPrice" oninput="getTotalPrice()"><br><br>
+
+    <label for="">Quantity</label>
+    <input type="text" id="quantity" oninput="getTotalPrice()"><br><br>
+
+    <label for="">Total price</label>
+    <input type="text" id="totalPrice" oninput="getTotalPrice()"><br><br>
+
+    <label for="">Discount</label>
+    <input type="text" id="discount" oninput="getActualPrice()"><br><br>
+
+    <label for="">Discount price</label>
+    <input type="text" id="discountPrice"><br><br>
+
+    <label for="">Actual price</label>
+    <input type="text" id="actualPrice" oninput="getActualPrice()">
+
+    <script>
+        function getTotalPrice(){
+        let unitPrice=document.getElementById('unitPrice').value; 
+        let quantity=document.getElementById('quantity').value; 
+        let totalPrice=document.getElementById('totalPrice').value;
+        
+        totalPrice=unitPrice*quantity;
+        document.getElementById('totalPrice').value=totalPrice;
+        }
+
+        function getActualPrice(){
+            let totalPrice=document.getElementById('totalPrice').value;  
+            let discount=document.getElementById('discount').value;  
+            let actualPrice=document.getElementById('actualPrice').value; 
+            
+            actualPrice=totalPrice-(totalPrice*discount)/100;
+            document.getElementById('actualPrice').value=actualPrice;
+
+            discountPrice=(totalPrice*discount)/100;
+            document.getElementById('discountPrice').value=discountPrice;
+        }
+
+    </script>
+</body>
+</html>

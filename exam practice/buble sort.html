@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let myArray=[42,14,45,78,95,12,35,41];
+
+        document.write("old :"+myArray);
+
+        for(let i=0; i<myArray.length; i++){
+            for(let j=0; j<myArray.length-i-1; j++){
+                if(myArray[j]>myArray[j+1]){
+                    let temp=myArray[j];
+                    myArray[j]=myArray[j+1];
+                    myArray[j+1]=temp;
+                }
+            }
+        }
+        document.write("<br>new :"+myArray);
+    </script>
+</body>
+</html>

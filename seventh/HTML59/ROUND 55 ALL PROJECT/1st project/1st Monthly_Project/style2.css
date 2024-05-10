@@ -1,0 +1,125 @@
+/* start navbar */
+.navbarcolor {
+  background-color: #05a0c8;
+}
+
+.logo-text-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.logo-text {
+  margin-left: 10px; /* Adjust the spacing between the logo and text */
+  color: #fff; /* Text color */
+}
+
+.logo-img {
+  width: 60px; /* Adjust the width of the logo image */
+  height: 60px; /* Adjust the height of the logo image */
+}
+
+.logotext {
+  font-size: 1.5rem; /* Adjust the font size as needed */
+  margin: 0;
+}
+
+.tagline {
+  font-size: 0.8rem; /* Adjust the font size as needed */
+  margin: 0;
+}
+.navbar-nav .nav-item .nav-link {
+  color: #fff; /* Adjust the menu item color */
+  font-family: Arial, sans-serif; /* Apply desired font style */
+  font-size: 1.1rem; /* Adjust the font size */
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+  color: #fff; /* Adjust the hover color */
+  background-color: #0c7cbf; /* Adjust the hover background color */
+}
+/* end navbar */
+
+/* start carousel */
+
+  
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    filter: invert(100%);
+  }
+
+  .carousel-item img {
+    display: block;
+    margin: 0 auto;
+    object-fit: contain;
+    max-height: 100vh;
+    width: auto;
+    max-width: 100%;
+  }
+
+  /* end carousel */
+
+
+  /* start 3rd section */
+  .image-section .image-wrapper {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .image-section .image-wrapper img {
+    transition: transform 0.3s ease;
+  }
+
+  .image-section .image-wrapper:hover img {
+    transform: scale(1.1);
+  }
+
+  .image-section .caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    color: #fff;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  .image-section .image-wrapper:hover .caption {
+    opacity: 1;
+  }
+  /* end 3rd section */
+
+  /* start footer */
+
+  .footer-section {
+    background-color: #25272E;
+    color: #FFF;
+    padding: 40px 0;
+  }
+
+  .footer-section .copyright {
+    color: #255F98;
+  }
+  .footer-section ul {
+    list-style: none; /* Remove bullets */
+  }
+  
+  .footer-section ul li {
+    margin-bottom: 5px; /* Adjust spacing between list items */
+    
+  }
+  
+  .footer-section ul li a {
+    text-decoration: none; /* Remove underline */
+    color: white; /* Set text color to white */
+    
+  }
+  .footer-section ul li a:hover{
+    color: blue;
+  }
+  
+  /* end footer */
+
+
+

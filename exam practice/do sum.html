@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="">Number 1</label>
+    <input type="text" id="number1"><br>
+
+    <label for="">Number</label>
+    <input type="text" id="number2"><br>
+
+    <input type="submit" value="sum" onclick="doSum()">
+
+    <script>
+        function doSum(){
+        let number1=document.getElementById('number1').value;
+        let number2=document.getElementById('number2').value;
+
+        let nu1toint=parseFloat(number1);
+        let nu2toint=parseFloat(number2);
+
+        let result=nu1toint+nu2toint;
+
+        document.write("Result :"+result);
+        }
+
+    </script>
+</body>
+</html>

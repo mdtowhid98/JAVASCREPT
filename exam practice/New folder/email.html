@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let Email=prompt("enter ur gmail");
+
+        const regEx=/^[^\s@]+@[^\s@]+\.[^\s@]+$/
+        if(regEx.test(Email)){
+            alert("it is correct email");
+        }
+
+        else{
+            alert("it is Wrong email")
+        }
+    </script>
+</body>
+</html>

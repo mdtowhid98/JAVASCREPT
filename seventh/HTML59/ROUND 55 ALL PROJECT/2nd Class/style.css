@@ -1,0 +1,24 @@
+
+/* tr:nth-child(even){
+    background-color: darkgreen;
+}
+tr:nth-child(odd){
+    background-color: darkseagreen;
+} */
+
+.first{
+    background-color: aquamarine;
+}
+
+#third{
+    color: rgb(136, 127, 255);
+    background-color: azure;
+}
+#fourth{
+    color: aqua;
+    background-color: brown;
+}
+#fifth{
+    color: white;
+    background-color: black;
+}

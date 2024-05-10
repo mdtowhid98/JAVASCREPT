@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="bootstarp/bootstrap.min.css">
+    <link rel="stylesheet" href="form.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- start navbar -->
+  
+
+  <header>
+    <nav class="navbar navbar-expand-lg navbarcolor fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <div class="logo-text-wrapper">
+            <img src="isdb-bisew logo.png" alt="Logo" class="logo-img">
+            <div class="logo-text">
+              <h1 class="logotext">IsDB-BISEW</h1>
+              <p class="tagline">Islamic Development Bank<br>Bangladesh Islamic Solidarity Educational Wakf</p>
+            </div>
+          </div>
+        </a>
+  
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+  
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index2.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="jee.html">JEE-R55</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="form.html">Apply</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Contact">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  
+  
+  <!-- end navbar -->
+
+
+    
+      
+
+
+
+
+    <form action="#" method="POST" enctype="multipart/form-data" class="p-5">
+        <h2>Application Form</h2>
+        
+        <h3>Photo uploading instruction:</h3>
+        <p>Upload image file only (jpg, jpeg, png)</p>
+        <p>The photo must be of passport size and be less than one month old</p>
+        <p>Minimum size of the image shall be 25KB and maximum size shall be 1024KB</p>
+        <p>The image must show full frontal view. Sideway image shall not be accepted.</p>
+        <p><a href="#">Click here to upload your photo</a></p>
+        
+        <h3>Candidate's Information</h3>
+        <div class="form-group">
+          <label for="candidate-name">Candidate's Name*</label>
+          <input type="text" id="candidate-name" name="candidate-name" required>
+        </div>
+        <div class="form-group">
+          <label for="father-name">Father's Name*</label>
+          <input type="text" id="father-name" name="father-name" required>
+        </div>
+        <div class="form-group">
+          <label for="date-of-birth">Date of Birth*</label>
+          <input type="date" id="date-of-birth" name="date-of-birth" required>
+        </div>
+        <div class="form-group">
+          <label for="gender">Gender*</label>
+          <select id="gender" name="gender" required>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="religion">Religion*</label>
+          <input type="text" id="religion" name="religion" required>
+        </div>
+        <div class="form-group">
+          <label for="marital-status">Marital Status*</label>
+          <select id="marital-status" name="marital-status" required>
+            <option value="single">Single</option>
+            <option value="married">Married</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="national-id">National ID*</label>
+          <input type="text" id="national-id" name="national-id" required>
+        </div>
+        <div class="form-group">
+          <label for="mobile-number">Mobile Number*</label>
+          <input type="text" id="mobile-number" name="mobile-number" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email">
+        </div>
+        <div class="form-group">
+          <label for="ssc-roll">SSC Roll*</label>
+          <input type="text" id="ssc-roll" name="ssc-roll" required>
+        </div>
+        <div class="form-group">
+          <label for="hsc-diploma-roll">HSC/Diploma Roll*</label>
+          <input type="text" id="hsc-diploma-roll" name="hsc-diploma-roll" required>
+        </div>
+        <div class="form-group">
+          <label for="last-degree">Last Degree*</label>
+          <input type="text" id="last-degree" name="last-degree" required>
+          <p><strong>BSc Engineers/Doctors/Lawyers are not allowed to apply for this Scholarship Programme</strong></p>
+        </div>
+        <div class="form-group">
+          <label for="last-degree-subject">Last Degree's Subject*</label>
+          <input type="text" id="last-degree-subject" name="last-degree-subject" required>
+        </div>
+        <div class="form-group">
+          <label for="university-name">University/College/Institute Name*</label>
+          <input type="text" id="university-name" name="university-name" required>
+        </div>
+        <div class="form-group">
+          <label for="result-publishing-date">Result Publishing Date*</label>
+          <input type="date" id="result-publishing-date" name="result-publishing-date" required>
+        </div>
+        <div class="form-group">
+          <label for="educational-engagement">Present Educational Engagement</label>
+          <select id="educational-engagement" name="educational-engagement">
+            <option value="none">--Select an option--</option>
+            <!-- Add more options if needed -->
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="preferred-city">Preferred City*</label>
+          <select id="preferred-city" name="preferred-city" required>
+            <option value="none">--Select Preferred City--</option>
+            <!-- Add more options if needed -->
+          </select>
+        </div>
+        
+        <div class="form-group">
+          <label for="declaration">
+            <input type="checkbox" id="declaration" name="declaration" required>
+            I declare that all the information provided by me in this Application is true.
+          </label>
+        </div>
+        
+        <h3>Payment Option</h3>
+        <div class="form-group">
+          <label for="payment-option">Payment Option</label>
+          <select id="payment-option" name="payment-option">
+            <option value="bkash">Pay with Bkash</option>
+            <option value="transaction-id">Already paid and have a Transaction Id</option>
+          </select>
+        </div>
+        
+        <button type="submit">Submit Application</button>
+      </form>
+
+
+      <hr>
+<!-- start footer -->
+
+
+<footer class="footer-section">
+  <section id="Contact">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3">
+        <img src="isdb-bisew logo.png" alt="Logo">
+      </div>
+      <div class="col-md-3">
+        <h5>Address</h5>
+        <p>123 Street, City, Country</p>
+      </div>
+      <div class="col-md-3">
+        <h5>Contact</h5>
+        <p>Email: info@example.com<br>Phone: +123456789</p>
+      </div>
+      <div class="col-md-3">
+        <h5>Important Links</h5>
+        <ul>
+          <li><a href="https://pis.isdb-bisew.org/login" target="_blank">Project Information System for VTP</a></li>
+          <li><a href="https://careerhub.isdb-bisew.info/" target="_blank">CareerHub IsDB-BISEW</a></li>
+          <li><a href="https://tms.isdb-bisew.info/Account/LogOn?ReturnUrl=%2f" target="_blank">TSPs Monitoring System</a></li>
+          <li><a href="https://tenant.isdb-bisew.org/login" target="_blank">IsDB-BISEW Tenant</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <p class="text-center copyright">
+          &copy; 2023 Your Company. All rights reserved.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+</footer>
+
+  
+  
+
+
+
+  <!-- end footer -->
+  <script src="bootstarp/bootstrap.bundle.min.js"></script>
+      
+      <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script> -->
+</body>
+</html>

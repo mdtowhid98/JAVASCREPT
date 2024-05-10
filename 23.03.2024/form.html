@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 10px;
+            padding: 10px;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            height: 100vh;
+        }
+        form{
+            margin: 10px;
+            padding: 10px;
+           box-sizing: border-box;
+           border-radius: 5px;
+           background-color: beige;
+           width: 20%;
+           height: 100vh;
+        }
+
+        input[type="text"],
+        select{
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        input[type="submit"]{
+            background-color: #2ff56b;
+        }
+    </style>
+</head>
+
+<body>
+    <form id="myForm">
+        <label for="">Name</label><br>
+        <input type="text" id="name"><br>
+
+        <label for="">Gender</label><br>
+        <input type="radio" name="gender" value="Male">Male
+        <input type="radio" name="gender" value="Female">Female <br>
+
+        <label for="">Course</label><br>
+        <input type="checkbox" name="course" value="NT">NT
+        <input type="checkbox" name="course" value="IAD">IAD
+        <input type="checkbox" name="course" value="DDD">DDD
+        <input type="checkbox" name="course" value="ESAD">ESAD <br>
+
+        <label for="">Location</label><br>
+        <select name="" id="location">
+            <option selected>--select one--</option>
+            <option value="BANANI">BANANI</option>
+            <option value="DHANMONDI">DHANMONDI</option>
+            <option value="MIRPUR">MIRPUR</option>
+        </select><br><br>
+
+        <input type="submit" value="submit">
+    </form>
+    <script src="form.js"></script>
+</body>
+
+</html>

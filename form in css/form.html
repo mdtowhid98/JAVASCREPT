@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+           margin: auto;
+           padding: 5px;
+        }
+        form{
+            background-color: beige;
+            border-radius: 10px;
+            padding: 25px;
+            box-shadow: 0 0 10px 
+        }
+        input[type="text"],
+        input[type="date"]{
+            width: 100%;
+            margin: 2px;
+            padding: 5px;
+            box-sizing: border-box;
+            border: 1px solid rgb(42, 238, 52);
+            border-radius: 5px;
+        }
+       select{
+            margin: 3px;
+            padding: 5px;
+            box-sizing: border-box;
+            border: 1px solid rgb(60, 57, 241);
+            width: 100%;
+            border-radius: 5px;
+            box-sizing: border-box;
+            box-shadow: 5px;
+        }
+        textarea{
+            width: 100%;
+            height: 10vh;
+            box-sizing: border-box;
+            border-radius: 5px;
+            border: 1px solid #b6fa19;
+            margin: 2px;
+            padding: 5px;
+        }
+        input[type="submit"]{
+            height: 5vh;
+            border-radius: 5px;
+            background-color: rgb(24, 245, 24);
+            width: 80px;
+            border: 3px solid black;
+        }
+    </style>
+</head>
+<body>
+    <form id="myForm">
+        <label for="">Name</label><br>
+        <input type="text" id="name"><br>
+
+        <label for="">Email</label><br>
+        <input type="text" id="email"><br>
+
+        <label for="">Password</label><br>
+        <input type="text" id="password"><br>
+
+        <label for="">DoB</label><br>
+        <input type="date" id="dob"><br>
+
+        <label for="">Gender</label><br>
+        <input type="radio" name="gender" value="Male">Male
+        <input type="radio" name="gender" value="Female">Female <br>
+        <label for="">Hobby</label><br>
+        <input type="checkbox" name="hobby" value="Gardening">Gardening
+        <input type="checkbox" name="hobby" value="Playing">Playing <br>
+
+        <label for="">Round</label><br>
+        <select name="" id="round">
+            <option selected>--select one--</option>
+            <option value="58">58</option>
+            <option value="59">59</option>
+            <option value="60">60</option>
+        </select><br>
+        <label for="">Address</label><br>
+        <textarea name="" id="address" cols="30" rows="10"></textarea><br>
+
+        <input type="submit" value="submit">
+    </form>
+    <script src="form.js"></script>
+</body>
+</html>

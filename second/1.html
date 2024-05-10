@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <label for="">number1</label>
+    <input type="number" id="number1"><br>
+    <label for="">number2</label>
+    <input type="number" id="number2"><br>
+    <input type="submit" value="sum" onclick="dosum()">
+    <input type="submit" value="subtraction" onclick="dosubtraction()">
+    <input type="submit" value="Multiplication" onclick="doMultiplication()">
+    <input type="submit" value="Exponentiation" onclick="doexponentiation()">
+    <input type="submit" value="Division" onclick="dodivision()">
+    <input type="submit" value="Modulus" onclick="domodulus()">
+
+
+    <script>
+        function dosum() {
+            let number1 = document.getElementById('number1').value;
+            let number2 = document.getElementById('number2').value;
+
+
+            let nu1toint = parseFloat(number1);
+            let nu2toint = parseFloat(number2);
+            let result = nu1toint + nu2toint;
+
+            document.write(result);
+
+
+        }
+    </script>
+
+    <script>
+        function dosubtraction() {
+            let number1 = document.getElementById('number1').value;
+            let number2 = document.getElementById('number2').value;
+
+
+            let nu1toint = parseFloat(number1);
+            let nu2toint = parseFloat(number2);
+            let result = nu1toint - nu2toint;
+
+            document.write(result);
+        }
+    </script>
+    <script>
+        function doMultiplication() {
+            let number1 = document.getElementById('number1').value;
+            let number2 = document.getElementById('number2').value;
+
+
+            let nu1toint = parseFloat(number1);
+            let nu2toint = parseFloat(number2);
+            let result = nu1toint * nu2toint;
+
+            document.write(result);
+        }
+    </script>
+    <script>
+        function doexponentiation() {
+            let number1 = document.getElementById('number1').value;
+            let number2 = document.getElementById('number2').value;
+
+
+            let nu1toint = parseFloat(number1);
+            let nu2toint = parseFloat(number2);
+            let result = nu1toint ** nu2toint;
+
+            document.write(result);
+        }
+    </script><br>
+
+    <script>
+        function dodivision() {
+            let number1 = document.getElementById('number1').value;
+            let number2 = document.getElementById('number2').value;
+
+
+            let nu1toint = parseFloat(number1);
+            let nu2toint = parseFloat(number2);
+            let result = nu1toint / nu2toint;
+
+            document.write(result);
+        }
+    </script>
+     <script>
+        function domodulus() {
+            let number1 = document.getElementById('number1').value;
+            let number2 = document.getElementById('number2').value;
+
+
+            let nu1toint = parseFloat(number1);
+            let nu2toint = parseFloat(number2);
+            let result = nu1toint 
+            % nu2toint;
+
+            document.write(result);
+        }
+    </script>
+
+
+
+
+
+</body>
+
+</html>

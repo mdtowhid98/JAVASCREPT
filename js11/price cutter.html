@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="">price</label><br>
+    <input type="number" id="price"><br>
+
+    <label for="">discount</label><br>
+    <input type="number" id="discount"><br>
+
+    <button onclick="calculate()">calculate</button>
+
+    <p id="result"></p>
+
+    <script>
+        function calculate() {
+            let price = parseFloat(document.getElementById('price').value);
+            let discount = parseFloat(document.getElementById('discount').value);
+
+            let discountPrice = price - (price * (discount / 100));
+            document.getElementById('result').innerHTML = "net price: " + discountPrice;
+        }
+    </script>
+</body>
+</html>

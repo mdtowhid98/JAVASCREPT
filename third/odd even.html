@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="">Number</label>
+    <input type="number" id="Number"><br>
+
+    <input type="submit" value="Check" onclick="oddeven()">
+
+    <p id="result"></p>
+
+    <script>
+        function oddeven(){
+        let userinput=document.getElementById('Number').value;
+
+        if(userinput%2==0){
+            document.getElementById('result').innerHTML="Even"
+        }
+        else{
+            document.getElementById('result').innerHTML="Odd" 
+        }
+    }
+    </script>
+</body>
+</html>

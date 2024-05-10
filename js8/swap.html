@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let myArry=[60,70,15,17,50];
+        document.write("old"+myArry)
+
+        for(let first=0;first<myArry.length;first++){
+
+            for(let second=0;second<myArry.length-first-1;second++){
+                if(myArry[second]>myArry[second+1]){
+                    let temp=myArry[second];
+                    myArry[second]=myArry[second+1];
+                    myArry[second+1]=temp;
+                }
+            }
+        }
+
+        document.write("<br> new"+ myArry)
+    </script>
+</body>
+</html>

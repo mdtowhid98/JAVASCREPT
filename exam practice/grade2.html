@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let Mark=prompt("enter ur mark");
+        let grade=0;
+
+        if(Mark<=32){
+            grade="F";
+        }
+        else if(Mark<=39){
+            grade="D";
+        }
+        else if(Mark<=49){
+            grade="C";
+        }
+        else if(Mark<=59){
+            grade="B";
+        }
+        else if(Mark<=69){
+            grade="A-";
+        }
+        else if(Mark<=79){
+            grade="A";
+        }
+        else if(Mark<=100){
+            grade="A+";
+        }
+        else{
+            alert("wrong input");
+        }
+        document.write(grade);
+    </script>
+</body>
+</html>

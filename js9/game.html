@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+<script>
+    const computerGuess=parseInt((Math.random()*100)+1);
+    let attemp=1;
+    while(attemp<=3){
+        let userGuess=prompt("Pls enter ur guess number");
+
+        if(computerGuess==userGuess){
+            document.write("Congrate U gusses the correct number");
+            break;
+        }
+
+        else if(computerGuess<userGuess){
+            alert("U guuses big number ");
+            attemp++;
+        }
+        else if(computerGuess>userGuess){
+            alert("U guuses small number ");
+            attemp++;
+        }
+
+        if (attemp==3){
+            document.write("Try Next time <>");
+            document.write("The number Was "+computerGuess);
+            break;
+        }
+
+
+    }
+
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="">Number 1 :</label>
+    <input type="text" id="number1" oninput="doSum()"><br><br>
+
+    <label for="">Number 2 :</label>
+    <input type="text" id="number2" oninput="doSum()"><br><br>
+
+    <label for="">SUM :</label>
+    <input type="text" id="sum" oninput="doSum()">
+     
+   
+    <script>
+        function doSum(){
+        let number1=document.getElementById('number1').value;
+        let number2=document.getElementById('number2').value;
+        let sum=document.getElementById('sum').value;
+
+        sum=number1*number2;
+
+        document.getElementById('sum').value=sum;
+        
+
+        }
+    </script>
+</body>
+</html>

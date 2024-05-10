@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let num1=prompt("Enter first number");
+        let num2=prompt("Enter second number");
+        let num3=prompt("Enter third number");
+
+        let maxInput = 0;
+        let minInput = 0;
+
+        if(num1>num2 && num1>num3){
+            maxInput = num1;
+        }
+        else if(num2>num1 && num2>num3){
+            maxInput = num2;
+        }
+        else{
+            maxInput = num3;
+        }
+
+
+        if(num1<num2 && num1<num3){
+            minInput = num1;
+        }
+        else if(num2<num1 && num2<num3){
+            minInput = num2;
+        }
+        else{
+            minInput = num3;
+        }
+
+
+
+        document.write(minInput +"</br>");
+        document.write(maxInput)
+    </script>
+</body>
+</html>
